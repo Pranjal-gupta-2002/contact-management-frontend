@@ -1,0 +1,74 @@
+.admin-container {
+    width: 80vw;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.user-table th {
+    background: #007bff;
+    color: white;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-container {
+        width: 95vw;
+    }
+
+    .user-table th, .user-table td {
+        padding: 8px;
+    }
+}
+.role-btn {
+    background-color: #f39c12; /* Orange color */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.role-btn:hover {
+    background-color: #e67e22; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+.role-btn:active {
+    transform: scale(0.95);
+}
